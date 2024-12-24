@@ -1,0 +1,262 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Roboto&display=swap');
+.allerta-regular {
+  font-family: "Allerta", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+	font-family: "Roboto", serif; 
+	font-size: 16px; 
+	color: #666666;
+	margin: 0
+}
+header{
+	width: 100%; 
+	height: 80px; 
+	background-color:rgba(223,219,216,0.4); 
+}
+.style1{ 
+  color: #d42e2b!important;
+        animation: 3s infinite 
+			}
+.top-bar{
+	 display: flex; 
+	padding: 10px  ; 
+	width: 100%; 
+	height:50px; 
+	line-height: 50px; 
+	margin: 0; 
+	display: block
+}
+.top-bar a{
+	text-decoration: none; 
+	text-transform: capitalize; 
+	padding: 10px 10px; 
+	color: #666666; 
+	font-size: 15px
+}
+.top-bar-left,
+ .top-bar-right {
+            display: flex;
+            align-items: center;
+			gap: 15px;
+}
+ .top-bar-center {
+            text-align: center;
+            flex: 1;
+        }
+.logo{
+	padding-top: 10px
+}
+.form-control{
+	padding: 10px; 
+	margin-bottom: 10px; 
+	border-radius: 20%
+}
+.menu ul{
+	margin: 0; 
+	padding: 0; 
+	list-style: none; 
+	display: flex
+}
+.menu{
+	padding-top: 10px; 
+	padding-bottom: 10px
+}
+.menu ul li a{
+	text-decoration: none; 
+	padding:10px 40px; 
+	text-transform:capitalize; 
+	color: #666666; 
+	display: block
+}
+.menu ul li a:hover{
+	color:#405e7f; 
+	border-bottom:#405e7f 1px solid; 
+	display: block
+}
+text-do{
+	color: red
+}
+/*dropdown menu*/
+.menu ul li{
+	position: relative
+		
+}
+.menu .dropdown{
+	position: absolute; 
+	left: 10px; 
+	top: 100%;
+	display: flex; 
+	flex-direction: column; 
+	background-color:#FFFFFF; 
+	width: 220px; 
+	opacity: 0; 
+	z-index: 1000; 
+	width:500px; 
+}
+.menu ul li:hover .dropdown{
+	color: aqua; 
+	opacity: 1;
+}
+.dropdown li a:hover{
+border-bottom: 1px solid #1FA8D1
+	}
+/*phần slider*/
+#slide .owl-dots{ position:absolute; bottom: 10px; left:45%;}
+#slide .owl-dots .owl-dot span {
+      width: 12px;
+      height: 12px; 	
+}
+#slide .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#slide .owl-nav [class*='owl-'] {
+	font-size:60px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #fff
+}
+
+#slide .owl-nav .owl-next{ position:absolute; right:5%;}
+#slide .owl-nav .owl-prev{ position:absolute; left:5%;}
+#slide .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:#F0BC08;
+      text-decoration: none; }
+#slide .owl-dots{ position:absolute; bottom: 10px; left:45%;}
+#slide .owl-dots .owl-dot span {
+      width: 12px;
+      height: 12px; 	
+}
+
+slide .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      margin: 5px 7px;
+      background:#FC0;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; }
+ #slide .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: #4DC7A0; }
+/*xong phần banner*/
+.btn-see-more {
+	padding: 10px; background-color: #FCFCFC; color: #666666; border:#BBBBBB 1px solid; font-size: 16px; width: 30%
+}
+.btn-see-more:hover{
+	alignment-baseline: bottom 1px solid; color: #4DC7A0
+}
+/*xong phần sản phẩm  tiêu biểu*/
+#proposal{
+	width: 100%; min-height: 700px; background-image: url("../images/2-NCH-banner-desktop-T12.2024-scaled.webp"); background-repeat: no-repeat; background-size: cover; background-position: center
+}
+.box-1{
+	font-size: 16px;
+	margin-top: 10px;
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.box-1 h2{
+	font-size: 30px;
+	font-weight: 300px
+}
+.pt-100{
+	padding-top: 100px; 
+	text-transform: uppercase
+}
+
+section #proposal .vien:hover{
+	border-bottom: 1px solid #A8A7A7
+}
+.text-den{
+	color:#1E1D1D; 
+	text-decoration: none
+}
+#wedding{
+	margin-top: 30px;
+	width: 100%; min-height: 500px; 
+	background-image: url("../images/3-NCC-banner-desktop-T12.2024-scaled (1).webp"); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center
+}
+.box-2{
+	font-size: 16px;
+	margin-top: 10px;
+	margin-left: 1000px;
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.box-2 h2{
+	font-size: 30px;
+	font-weight: 300px
+}
+.button {
+  background-color: #F5EBEC; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+section #wedding .vien:hover{
+	border-bottom: 1px solid #A8A7A7
+}
+#best-selling{
+	margin-top: 30px;
+	width: 100%; min-height: 500px; 
+	background-image: url("../images/7-Fine-desktop-T12.2024-scaled.webp"); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center
+}
+section #best-selling .vien:hover{
+	border-bottom: 1px solid #A8A7A7
+}
+#Dinamond{
+	margin-top: 30px;
+	width: 100%; 
+	min-height: 700px; 
+	background-image: url("../images/4-KC-desktopT12.2024.webp"); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center
+}
+#ORDER{
+	margin-top: 50px;
+	width:100%; 
+	min-height: 700px; 
+	background-image: url("../images/tkr-pc.webp"); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center
+}
+#form{
+	padding-top: 10px;
+	margin-top: 50px; 
+	min-height: 700px; 
+	background-color: #f8f3ef;
+	width: 100%;
+	display: block
+}
+#Best-choice{
+	margin-top: 60px;
+	padding: 10px;
+	background-color: #f8f3ef;
+	width: 100%;
+	min-height: 200px; 
+	display: block
+}
+footer.text-left{
+	flex-direction: column; text-align: left
+}
+section#service{
+	margin-top: 50px;
+}
